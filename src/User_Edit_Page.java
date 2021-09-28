@@ -15,14 +15,14 @@ import javax.swing.table.DefaultTableModel;
  * @author root
  */
 public class User_Edit_Page extends javax.swing.JFrame {
-String url="jdbc:mysql://localhost:3306/";  
-String veritabaniadi="passbox_db";  
+String url="jdbc:mysql://localhost:3306/";
+String veritabaniadi="passbox_db";
 String surucu="com.mysql.jdbc.Driver";
-String kullaniciAdi="root";  
-String kullaniciParolası=""; 
+String kullaniciAdi="root";
+String kullaniciParolası="";
 Connection baglanti=null;
 Statement komut=null;
-ResultSet gelenveri=null; 
+ResultSet gelenveri=null;
 PreparedStatement pst=null;
     /**
      * Creates new form User_Edit_PAge
@@ -214,7 +214,7 @@ public User_Edit_Page( ) {
     }//GEN-LAST:event_jButton_TurnBackActionPerformed
 
     private void jButton_UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_UpdateActionPerformed
-        try{
+       /* try{
        String değer1=jTextField1.getText();
        String değer2=jTextField2.getText();
        String değer3=jPasswordField1.getText();
@@ -225,10 +225,10 @@ public User_Edit_Page( ) {
        pst=baglanti.prepareStatement(sorgu);
        pst.execute();
        JOptionPane.showMessageDialog(null,"Güncelleme işlemi gerçekleşti");
-       
+
      } catch (SQLException ex) {
             JOptionPane.showConfirmDialog(null, "Sorgu da hata var "+ex);
-        }   
+        } */
     }//GEN-LAST:event_jButton_UpdateActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -244,7 +244,7 @@ public User_Edit_Page( ) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
